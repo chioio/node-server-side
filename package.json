@@ -3,5 +3,12 @@
   "version": "1.0.0",
   "repository": "https://github.com/chioio/node-server-side.git",
   "author": "Tenn Chio",
-  "license": "MIT"
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/simple-web-server"
+  ],
+  "scripts": {
+    "start:simple-web-server": "yarn workspace simple-web-server start"
+  }
 }
